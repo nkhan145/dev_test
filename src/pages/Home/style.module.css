@@ -1,0 +1,61 @@
+.main {
+  margin: 3rem auto;
+}
+
+.main .planetsHeading {
+  padding: 20px;
+  text-align: center;
+}
+
+.main .btn {
+  display: inline-block;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 13px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  padding: 0 10px;
+}
+
+.main .btn:hover {
+  background-color: #333333;
+}
+
+.main table {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 20px;
+  line-height: 30px;
+}
+
+.main table td,
+.main table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.main table thead {
+  background-color: black;
+  color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.main table thead th {
+  text-align: center;
+}
+
+.main table tbody {
+  background-color: #cac7c7;
+}
+
+.main table tbody td {
+  text-align: center;
+}
+/*# sourceMappingURL=style.module.css.map */
