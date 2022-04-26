@@ -10,11 +10,17 @@ const App = () => {
   const [apiData, setApiData] = useState([]);
   useEffect(() => {
     Axios.get(`/discoveries.json?sort_by=asc(releasedate)`).then((response) => {
-      console.log(response);
-      setApiData(response.data);
+      function byDate(a, b) {
+        //chronologically by year, month, then day
+        return (
+          new Date(a.releasedate).valueOf() - new Date(b.releasedate).valueOf()
+        );
+      }
+      setApiData(response.data.sort(byDate));
     });
   }, []);
-  // console.log(apiData);
+
+  console.log(apiData);
 
   return (
     <div className={style.main}>
