@@ -2,12 +2,6 @@ import React from 'react';
 import style from './style.module.scss';
 
 const index = ({ apiData }) => {
-  // var sortByDate = apiData.data.releassedate.sort((a,b) => {
-  //     return new Date(a.scheduled_for).getTime() -
-  //         new Date(b.scheduled_for).getTime()
-  // }).reverse();
-
-  // console.log(sortByDate)
   return (
     <div className={`container-sm ${style.main}`}>
       <div>
